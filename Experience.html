@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NUR MARHAINI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4e8ff;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #5e4b8b; 
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.8s ease, transform 0.8s ease;
+    }
+
+    nav a:hover {
+      color: #ffb3ff; 
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "🌸";
+      margin-left: 20px;
+      color: #d1b3ff;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 40px;
+    }
+
+    .card {
+      width: 280px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3); 
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #5e4b8b;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #333;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5e4b8b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Profile</a>
+      <a href="Education.html">Academic</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+
+    <div class="about-container">
+      <div class="card">
+        <img src="images/sciolisis.jpg" alt="My Disease" />
+        <p>I am one of the scoliosis patients. I have known about it since 2022. Every six months I have to go for a checkup at the Seberang Jaya hospital. I have high insecurity about my body shape.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/flex.png" alt="My First Work" />
+        <p>After completing STPM, I worked temporarily at Flex Batu Kawan, Penang. I worked as an operator. I liked working there because of the good salary. Despite having a good salary, I didn't have time for my family because I was busy with work.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/flight.png" alt="My First Flight" />
+        <p>Last year, I flew to Singapore. This was my first time flying. I was a bit scared at first but after flying in the air I was okay. When I wanted to return to Malaysia, the weather was a bit bad at night. I felt nervous. But the flight attendants were quite satisfactory.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/singapore.png" alt="My Singapore Trip" />
+        <p>Last year, I went to Singapore. This was my first time traveling abroad. I went there because my uncle's house is there. The country is very clean and has a high economy.</p>
+      </div>
+    </div>
+  </div> 
+
+  <footer>
+    <p>241572625 NUR MARHAINI BINTI DAUD.</p>
+  </footer>
+
+</body>
+</html>

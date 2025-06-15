@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NUR MARHAINI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4e8ff; /* light lavender */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #5e4b8b; /* dark purple */
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.8s ease, transform 0.8s ease;
+    }
+
+    nav a:hover {
+      color: #ffb3ff; /* soft pink */
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "🌸";
+      margin-left: 20px;
+      color: #cba2f2;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 900px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .about-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      border: 3px solid #5e4b8b;
+      object-fit: cover;
+    }
+
+    .about-box {
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      border-left: 5px solid #9b59b6; /* accent purple */
+    }
+
+    .about-box h2 {
+      margin-top: 0;
+      color: #5e4b8b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5e4b8b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Profile</a>
+      <a href="Education.html">Academic</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+
+    <center><h1 style="color: #5e4b8b; margin-top: 30px;">Welcome to My Website</h1></center>
+
+    <div class="about-container">
+      <img src="images/mar.jpg" alt="Profile Picture">
+      <div class="about-box">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Nur Marhaini</strong>. I’m passionate about web design and development. I enjoy creating clean, modern, and user-friendly websites. In my free time, I love learning new things and exploring creative ideas. Thanks for visiting my profile!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>241572625 NUR MARHAINI BINTI DAUD.</p>
+  </footer>
+
+</body>
+</html>

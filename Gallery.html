@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NUR MARHAINI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4e8ff;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #5e4b8b;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.8s ease, transform 0.8s ease;
+    }
+
+    nav a:hover {
+      color: #ffb3ff;
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "🌸";
+      margin-left: 20px;
+      color: #d1b3ff;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slider-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-images img {
+      width: 50%;
+      flex-shrink: 0;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5e4b8b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Profile</a>
+      <a href="Education.html">Academic</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+      <div class="slider-container">
+        <div class="slider-images" id="slider">
+          <img src="images/pic 1.jpg" alt="Gallery Image 1">
+          <img src="images/pic 2.jpg" alt="Gallery Image 2">
+          <img src="images/pic 3.jpg" alt="Gallery Image 3">
+          <img src="images/pic 4.jpg" alt="Gallery Image 4">
+          <img src="images/pic 5.jpg" alt="Gallery Image 5">
+          <img src="images/pic 6.jpg" alt="Gallery Image 6">
+          <img src="images/pic 7.jpg" alt="Gallery Image 7">
+        </div>
+        <button class="slider-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-button next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>241572625 NUR MARHAINI BINTI DAUD.</p>
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+      const slider = document.getElementById("slider");
+      const images = slider.querySelectorAll("img");
+      const total = images.length;
+
+      currentIndex += direction;
+
+      if (currentIndex < 0) currentIndex = total - 1;
+      if (currentIndex >= total) currentIndex = 0;
+
+      const width = images[0].clientWidth;
+      slider.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+  </script>
+</body>
+</html>

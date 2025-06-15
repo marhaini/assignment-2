@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NUR MARHAINI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4e8ff; /* lavender lembut */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #5e4b8b;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.8s ease, transform 0.8s ease;
+    }
+
+    nav a:hover {
+      color: #ffb3ff; 
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "🌸";
+      margin-left: 20px;
+      color: #cba2f2;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-box {
+      background-color: #ffffff;
+      padding: 40px;
+      flex: 1;
+      min-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 20px;
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.6;
+      border-left: 5px solid #9b59b6;
+    }
+
+    table, th, td {
+      border: 1px solid #5e4b8b;
+      border-collapse: collapse;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5e4b8b;
+      color: white;
+    }
+
+    ul, ol {
+      margin: 0 0 0 20px;
+      padding-left: 20px;
+    }
+
+    ul > li {
+      list-style-type: none;
+      font-weight: bold;
+    }
+
+    ul > li + ol {
+      margin-bottom: 1em;
+    }
+
+    .social-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .podcast-img {
+      display: block;
+      margin: 0 auto;
+      width: 350px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    h2 {
+      color: #5e4b8b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Profile</a>
+      <a href="Education.html">Academic</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+
+    <div class="about-container">
+      <div class="about-box">
+       
+
+        <table class="center">
+          <tr>
+            <td colspan="2" style="text-align:center; font-weight: bold; font-size: 1.2em;">
+              NUR MARHAINI BINTI DAUD
+            </td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>21 Years Old</td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>15<sup>th</sup> November 2004</td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>0175951936</td>
+          </tr>
+          <tr>
+            <td>Favourite Food & Beverage</td>
+            <td>
+              <ul>
+                <li>Favourite Food
+                  <ol>
+                    <li>Spageti Carbonara</li>
+                    <li>Chicken Chop</li>
+                    <li>Chicken Buttermilk</li>
+                  </ol>
+                </li>
+                <li>Favourite Beverage
+                  <ol>
+                    <li>Matcha Latte</li>
+                    <li>Green Tea</li>
+                    <li>Apple Juice</li>
+                  </ol>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Favourite Podcast Show</td>
+            <td style="text-align:center;">
+              <a href="https://youtu.be/3b0gEURMMVk?si=p3K3yZ-01E0Fwz0S" target="_blank" rel="noopener noreferrer">
+                <img src="images/podcast.png" alt="Podcast Image" class="podcast-img" />
+              </a>
+              <p>Studio Sembang - Beauty And Brains Ft. Zahirah Macwilson</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Favourite Friend</td>
+            <td>
+              <ul>
+                <li>Aina Syakirah</li>
+                <li>Sazlin Nazira</li>
+                <li>Ain Halim</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Social Media Account</td>
+            <td style="text-align:center;">
+              <a href="https://www.threads.com/@nrmarhani_?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">
+                <img src="images/threads.png" alt="Social Media Icon" class="social-icon" />
+              </a>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>241572625 NUR MARHAINI BINTI DAUD.</p>
+  </footer>
+
+</body>
+</html>
