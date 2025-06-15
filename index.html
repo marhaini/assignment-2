@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROFILE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+ 
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4e8ff;    }
+
+    nav {
+      background: repeating-radial-gradient(black, gold);
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+   nav {
+      background: #5e4b8b;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.8s ease, transform 0.8s ease;
+    }
+
+    nav a:hover {
+      color: #ffb3ff; 
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "🌸";
+      margin-left: 20px;
+      color: #cba2f2;
+    }
+
+ footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5e4b8b;
+      color: white;
+    }
+
+
+
+    .slider {
+      width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: white;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slides img {
+      width: 133.33px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Profile</a>
+      <a href="Education.html">Academic</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+
+
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="images/mar.jpg" alt="1" />
+      <img src="images/myself 2.jpg" alt="2" />
+      <img src="images/myself 3.jpg" alt="3" />
+      <img src="images/myself 4.jpg" alt="4" />
+      <img src="images/myself 5.jpg" alt="5" />
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>Hello! My name is <strong>Nur Marhaini</strong>. I’m passionate about web design and development. I enjoy creating clean, modern, and user-friendly websites. In my free time, I love learning new things and exploring creative ideas. Thanks for visiting my profile!</p>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+    let index = 0;
+
+    function slide() {
+      index = (index + 1) % total;
+      slides.style.transform = `translateX(${-index * 133.33}px)`;
+    }
+
+    setInterval(slide, 3000);
+  </script>
+
+  <footer>
+    <div class="footer-container">
+     
+    <p>241572625 NUR MARHAINI BINTI DAUD.</p>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
